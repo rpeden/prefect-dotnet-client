@@ -150,9 +150,7 @@ Class | Method | HTTP request | Description
 *BlockTypesApi* | [**DeleteBlockType**](docs/BlockTypesApi.md#deleteblocktype) | **DELETE** /block_types/{id} | Delete Block Type
 *BlockTypesApi* | [**InstallSystemBlockTypes**](docs/BlockTypesApi.md#installsystemblocktypes) | **POST** /block_types/install_system_block_types | Install System Block Types
 *BlockTypesApi* | [**ReadBlockDocumentByNameForBlockType**](docs/BlockTypesApi.md#readblockdocumentbynameforblocktype) | **GET** /block_types/slug/{slug}/block_documents/name/{block_document_name} | Read Block Document By Name For Block Type
-*BlockTypesApi* | [**ReadBlockDocumentByNameForBlockType_0**](docs/BlockTypesApi.md#readblockdocumentbynameforblocktype_0) | **GET** /block_types/slug/{slug}/block_documents/name/{block_document_name} | Read Block Document By Name For Block Type
 *BlockTypesApi* | [**ReadBlockDocumentsForBlockType**](docs/BlockTypesApi.md#readblockdocumentsforblocktype) | **GET** /block_types/slug/{slug}/block_documents | Read Block Documents For Block Type
-*BlockTypesApi* | [**ReadBlockDocumentsForBlockType_0**](docs/BlockTypesApi.md#readblockdocumentsforblocktype_0) | **GET** /block_types/slug/{slug}/block_documents | Read Block Documents For Block Type
 *BlockTypesApi* | [**ReadBlockTypeById**](docs/BlockTypesApi.md#readblocktypebyid) | **GET** /block_types/{id} | Read Block Type By Id
 *BlockTypesApi* | [**ReadBlockTypeBySlug**](docs/BlockTypesApi.md#readblocktypebyslug) | **GET** /block_types/slug/{slug} | Read Block Type By Slug
 *BlockTypesApi* | [**ReadBlockTypes**](docs/BlockTypesApi.md#readblocktypes) | **POST** /block_types/filter | Read Block Types
