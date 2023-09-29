@@ -34,7 +34,7 @@ using PrefectClient.Api;
 using PrefectClient.Client;
 using PrefectClient.Model;
 ```
-Alternatively, instead of building seprately, you can add the project to an existing solution in Visual Studio.
+Alternatively, instead of building seprately, you can add the `PrefectClient.csproj` project to an existing solution in Visual Studio.
 
 <a id="usage"></a>
 ## Usage
