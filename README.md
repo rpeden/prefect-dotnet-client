@@ -78,6 +78,8 @@ services.AddHttpClient<YourApiClass>(httpClient =>
 ## Getting Started
 
 ```csharp
+namespace Example;
+
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
@@ -85,31 +87,30 @@ using PrefectClient.Api;
 using PrefectClient.Client;
 using PrefectClient.Model;
 
-namespace Example
-{
-    public class Example
-    {
-        public static void Main()
-        {
 
-            var apiInstance = new AdminApi("http://localhost:4200/api");
-            var clearDatabaseRequest = new ClearDatabaseRequest();
 
-            try
-            {
-                // Clear Database
-                apiInstance.ClearDatabase(clearDatabaseRequest);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling AdminApi.ClearDatabase: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
+ public class Example
+ {
+     public static void Main()
+     {
 
-        }
-    }
-}
+         var apiInstance = new AdminApi("http://localhost:4200/api");
+         var clearDatabaseRequest = new ClearDatabaseRequest();
+
+         try
+         {
+             // Clear Database
+             apiInstance.ClearDatabase(clearDatabaseRequest);
+         }
+         catch (ApiException e)
+         {
+             Debug.Print("Exception when calling AdminApi.ClearDatabase: " + e.Message );
+             Debug.Print("Status Code: "+ e.ErrorCode);
+             Debug.Print(e.StackTrace);
+         }
+
+     }
+ }
 ```
 
 <a id="documentation-for-api-endpoints"></a>
