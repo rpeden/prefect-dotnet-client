@@ -88,29 +88,27 @@ using PrefectClient.Client;
 using PrefectClient.Model;
 
 
+public class Example
+{
+   public static void Main()
+   {
+      var apiInstance = new AdminApi("http://localhost:4200/api");
+      var clearDatabaseRequest = new ClearDatabaseRequest();
 
- public class Example
- {
-     public static void Main()
-     {
+      try
+      {
+          // Clear Database
+          apiInstance.ClearDatabase(clearDatabaseRequest);
+      }
+      catch (ApiException e)
+      {
+          Debug.Print("Exception when calling AdminApi.ClearDatabase: " + e.Message );
+          Debug.Print("Status Code: "+ e.ErrorCode);
+          Debug.Print(e.StackTrace);
+      }
 
-         var apiInstance = new AdminApi("http://localhost:4200/api");
-         var clearDatabaseRequest = new ClearDatabaseRequest();
-
-         try
-         {
-             // Clear Database
-             apiInstance.ClearDatabase(clearDatabaseRequest);
-         }
-         catch (ApiException e)
-         {
-             Debug.Print("Exception when calling AdminApi.ClearDatabase: " + e.Message );
-             Debug.Print("Status Code: "+ e.ErrorCode);
-             Debug.Print(e.StackTrace);
-         }
-
-     }
- }
+   }
+}
 ```
 
 <a id="documentation-for-api-endpoints"></a>
