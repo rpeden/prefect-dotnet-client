@@ -28,12 +28,14 @@ Install-Package System.ComponentModel.Annotations
 ## Installation
 Generate the DLL using your preferred tool (e.g. `dotnet build`), or build it in Visual Studio.
 
-Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
+Then include the DLL (under the `bin` folder) in your .NET project, and use the namespaces:
 ```csharp
 using PrefectClient.Api;
 using PrefectClient.Client;
 using PrefectClient.Model;
 ```
+Alternatively, instead of building seprately, you can add the project to an existing solution in Visual Studio.
+
 <a id="usage"></a>
 ## Usage
 
