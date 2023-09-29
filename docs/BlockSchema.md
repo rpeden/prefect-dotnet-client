@@ -1,0 +1,19 @@
+# PrefectClient.Model.BlockSchema
+An ORM representation of a block schema.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **Guid** |  | [optional] 
+**Created** | **DateTime** |  | [optional] 
+**Updated** | **DateTime** |  | [optional] 
+**Checksum** | **string** | The block schema&#39;s unique checksum | 
+**Fields** | **Object** | The block schema&#39;s field schema | [optional] 
+**BlockTypeId** | **Guid** | A block type ID | 
+**BlockType** | [**BlockType**](BlockType.md) |  | [optional] 
+**Capabilities** | **List&lt;string&gt;** | A list of Block capabilities | [optional] 
+**VarVersion** | **string** | Human readable identifier for the block schema | [optional] [default to "non-versioned"]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

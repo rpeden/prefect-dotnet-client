@@ -1,0 +1,17 @@
+# PrefectClient.Model.ArtifactCreate
+Data used by the Prefect REST API to create an artifact.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Key** | **string** | An optional unique reference key for this artifact. | [optional] 
+**Type** | **string** | An identifier that describes the shape of the data field. e.g. result, table, markdown | [optional] 
+**Description** | **string** | A markdown-enabled description of the artifact. | [optional] 
+**Data** | **Object** |  | [optional] 
+**Metadata** | **Dictionary&lt;string, string&gt;** | User-defined artifact metadata. Content must be string key and value pairs. | [optional] 
+**FlowRunId** | **Guid** | The flow run associated with the artifact. | [optional] 
+**TaskRunId** | **Guid** | The task run associated with the artifact. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
